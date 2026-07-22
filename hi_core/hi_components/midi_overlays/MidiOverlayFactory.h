@@ -37,7 +37,7 @@ namespace hise {
 using namespace juce;
 
 
-class MidiOverlayFactory: public DeletedAtShutdown
+class MidiOverlayFactory: public DeletedAtShutdown //changed: fixed MidiOverlay DAW crash on second instance (removed ": public DeletedAtShutdown")
 {
 public:
 
